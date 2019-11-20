@@ -12,12 +12,15 @@ package main
 //	return router
 //}
 import (
-	"database/sql"
-	"fmt"
+	"log"
 )
 func main(){
 
 	//r := RegisterHandlers()
 	//http.ListenAndServe(":8000",r)
 
+	log.SetFlags(log.Ldate|log.Ltime|log.Llongfile)
+
+	log.Println("飞雪无情的博客:","http://www.flysnow.org")
+	log.Printf("飞雪无情的微信公众号：%s\n","flysnow_org")
 }
