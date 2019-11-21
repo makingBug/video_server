@@ -5,8 +5,10 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	"log"
 	"video_server/api/defs"
-	"video_server/api/utils"
 	"time"
+	"video_server/api/utils"
+
+	//"video_server/api/utils"
 )
 
 

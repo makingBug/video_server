@@ -1,26 +1,37 @@
 package main
 
-//import (
-//	"net/http"
-//	"github.com/julienschmidt/httprouter"
-//)
-//
-//func RegisterHandlers() *httprouter.Router{
-//	router := httprouter.New()
-//	router.POST("/user",CreateUser)
-//	router.POST("/user/:user_name",Login)
-//	return router
-//}
 import (
-	"log"
+	"net/http"
+	"github.com/julienschmidt/httprouter"
+
 )
+
+type middleWareHandler struct {
+	r *httprouter.Router
+}
+
+func NewMiddleWareHandler(r *httprouter.Router) http.Handler {
+	m := middleWareHandler{}
+	m.r = r
+	return m
+}
+
+
+func (m middleWareHandler) ServeHTTP (w http.ResponseWriter,r * http.Request) {
+	// check session
+	validateUserSession(r)
+	m.r.ServeHTTP(w,r)
+}
+
+func RegisterHandlers() *httprouter.Router{
+	router := httprouter.New()
+	router.POST("/user",CreateUser)
+	router.POST("/user/:user_name",Login)
+	return router
+}
+
 func main(){
-
-	//r := RegisterHandlers()
-	//http.ListenAndServe(":8000",r)
-
-	log.SetFlags(log.Ldate|log.Ltime|log.Llongfile)
-
-	log.Println("飞雪无情的博客:","http://www.flysnow.org")
-	log.Printf("飞雪无情的微信公众号：%s\n","flysnow_org")
+	r := RegisterHandlers()
+	mh := NewMiddleWareHandler(r)
+	http.ListenAndServe(":8000",mh)
 }

@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c56a61f-a7c4-49d1-bc74-39faa0bacf65" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/dbops/internal.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/session/ops.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/dbops/api.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/dbops/api.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/defs/apidef.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/defs/apidef.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/defs/errs.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/defs/errs.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/handlers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/response.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/response.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,88 +18,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/dbops/api.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="36" column="7" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="7" />
-              <folding>
-                <element signature="e#15#41#0" expanded="true" />
-                <element signature="n#!!block;n#AddUserCredential#0" />
-                <element signature="e#478#485#0" />
-                <element signature="e#631#636#0" />
-                <element signature="e#1748#1753#0" />
-                <element signature="n#!!block;n#DeleteVideoInfo#0" />
-                <element signature="e#2737#2742#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/utils/uuid.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/session/ops.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="58" column="51" selection-start-line="58" selection-start-column="51" selection-end-line="58" selection-end-column="51" />
-              <folding>
-                <element signature="e#17#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/dbops/internal.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+            <state relative-caret-position="1215">
+              <caret line="84" column="37" selection-start-line="84" selection-start-column="37" selection-end-line="84" selection-end-column="37" />
               <folding>
-                <element signature="e#15#27#0" expanded="true" />
-                <element signature="e#69#74#0" />
-                <element signature="e#415#420#0" />
                 <element signature="n#!!block;n#RetrieveAllSessions#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/go/src/database/sql/sql.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="2631" column="49" selection-start-line="2631" selection-start-column="46" selection-end-line="2631" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/go/src/strconv/itoa.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/go/src/sync/map.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="101" column="14" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="14" />
-              <folding>
-                <element signature="e#2688#2797#0" />
-                <element signature="e#2799#2877#0" />
-                <element signature="e#3029#3869#0" />
+                <element signature="n#!!block;n#DeleteSession#0" />
               </folding>
             </state>
           </provider>
@@ -105,21 +35,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/dbops/api_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+            <state relative-caret-position="351">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
               <folding>
-                <element signature="e#15#36#0" expanded="true" />
                 <element signature="n#!!block;n#TestMain#0" />
                 <element signature="n#!!block;n#testAddUser#0" />
                 <element signature="n#!!block;n#testGetUser#0" />
                 <element signature="n#!!block;n#testDeleteUser#0" />
                 <element signature="n#!!block;n#testRegetUser#0" />
-                <element signature="e#1080#1085#0" />
                 <element signature="n#!!block;n#testAddVideoInfo#0" />
                 <element signature="n#!!block;n#testGetVideoInfo#0" />
                 <element signature="n#!!block;n#testDeleteVideoInfo#0" />
                 <element signature="n#!!block;n#testRegetVideoInfo#0" />
-                <element signature="e#2141#2146#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-23">
+              <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+              <folding>
+                <element signature="e#14#75#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,8 +67,54 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/handlers.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <state relative-caret-position="702">
+              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/dbops/api.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <folding>
+                <element signature="n#!!block;n#AddUserCredential#0" />
+                <element signature="n#!!block;n#GetUserCredential#0" />
+                <element signature="n#!!block;n#DeleteUser#0" />
+                <element signature="n#!!block;n#DeleteVideoInfo#0" />
+                <element signature="n#!!block;n#ListComments#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/auth.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/utils/uuid.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#15#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/response.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -137,11 +122,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/defs/apidef.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-              <folding>
-                <element signature="e#134#149#0" />
-              </folding>
+            <state relative-caret-position="648">
+              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/defs/errs.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="15" column="105" selection-start-line="15" selection-start-column="105" selection-end-line="15" selection-end-column="105" />
             </state>
           </provider>
         </entry>
@@ -159,6 +150,7 @@
     <findStrings>
       <find>vid</find>
       <find>QueryRow</find>
+      <find>NewMiddleWareHandler</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
@@ -174,15 +166,19 @@
         <option value="$PROJECT_DIR$/api/dbops/conn.go" />
         <option value="$PROJECT_DIR$/mysql_demo/mysql_demo_test.go" />
         <option value="$PROJECT_DIR$/mysql_demo/mysql_demo.go" />
-        <option value="$PROJECT_DIR$/api/main.go" />
         <option value="$PROJECT_DIR$/api/utils/utils_test.go" />
         <option value="$PROJECT_DIR$/api/utils/uuid.go" />
-        <option value="$PROJECT_DIR$/api/dbops/api.go" />
         <option value="$PROJECT_DIR$/api/dbops/api_test.go" />
-        <option value="$PROJECT_DIR$/api/defs/apidef.go" />
-        <option value="$PROJECT_DIR$/api/handlers.go" />
         <option value="$PROJECT_DIR$/api/dbops/internal.go" />
         <option value="$PROJECT_DIR$/api/session/ops.go" />
+        <option value="$PROJECT_DIR$/api/utils/auth.go" />
+        <option value="$PROJECT_DIR$/api/defs/apidef.go" />
+        <option value="$PROJECT_DIR$/api/response.go" />
+        <option value="$PROJECT_DIR$/api/defs/errs.go" />
+        <option value="$PROJECT_DIR$/api/handlers.go" />
+        <option value="$PROJECT_DIR$/api/dbops/api.go" />
+        <option value="$PROJECT_DIR$/api/auth.go" />
+        <option value="$PROJECT_DIR$/api/main.go" />
       </list>
     </option>
   </component>
@@ -227,7 +223,7 @@
               <item name="video_server" type="b2602c69:ProjectViewProjectNode" />
               <item name="video_server" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="session" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -249,6 +245,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="go.sdk" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -279,13 +280,12 @@
     </recent_temporary>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.13669065" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.13835086" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.15816326" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.33163264" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32959184" />
@@ -302,6 +302,27 @@
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.13835086" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.33163264" />
+      <window_info anchor="bottom" id="Database Changes" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.32959184" />
+      <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.32959184" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -337,6 +358,20 @@
                 </list>
               </option>
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
           </value>
         </entry>
       </map>
@@ -395,26 +430,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysql_demo/mysql_demo_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <element signature="e#20#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysql_demo/mysql_demo.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#19#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql_demo/mysql_demo_test.go" />
+    <entry file="file://$PROJECT_DIR$/mysql_demo/mysql_demo.go" />
     <entry file="file:///usr/local/go/src/builtin/builtin.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -439,58 +456,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/main.go">
+    <entry file="file://$PROJECT_DIR$/api/utils/utils_test.go" />
+    <entry file="file:///usr/local/go/src/database/sql/sql.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#260#272#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/dbops/api_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-          <folding>
-            <element signature="e#15#36#0" expanded="true" />
-            <element signature="n#!!block;n#TestMain#0" />
-            <element signature="n#!!block;n#testAddUser#0" />
-            <element signature="n#!!block;n#testGetUser#0" />
-            <element signature="n#!!block;n#testDeleteUser#0" />
-            <element signature="n#!!block;n#testRegetUser#0" />
-            <element signature="e#1080#1085#0" />
-            <element signature="n#!!block;n#testAddVideoInfo#0" />
-            <element signature="n#!!block;n#testGetVideoInfo#0" />
-            <element signature="n#!!block;n#testDeleteVideoInfo#0" />
-            <element signature="n#!!block;n#testRegetVideoInfo#0" />
-            <element signature="e#2141#2146#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/utils/utils_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding>
-            <element signature="e#15#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/utils/uuid.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/handlers.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        <state relative-caret-position="858">
+          <caret line="2631" column="49" selection-start-line="2631" selection-start-column="46" selection-end-line="2631" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -498,39 +468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/database/sql/sql.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="2631" column="49" selection-start-line="2631" selection-start-column="46" selection-end-line="2631" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/dbops/api.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="36" column="7" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="7" />
-          <folding>
-            <element signature="e#15#41#0" expanded="true" />
-            <element signature="n#!!block;n#AddUserCredential#0" />
-            <element signature="e#478#485#0" />
-            <element signature="e#631#636#0" />
-            <element signature="e#1748#1753#0" />
-            <element signature="n#!!block;n#DeleteVideoInfo#0" />
-            <element signature="e#2737#2742#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/defs/apidef.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-          <folding>
-            <element signature="e#134#149#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -546,25 +483,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/dbops/internal.go">
+    <entry file="file://$PROJECT_DIR$/api/session/ops.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+        <state relative-caret-position="540">
+          <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
           <folding>
-            <element signature="e#15#27#0" expanded="true" />
-            <element signature="e#69#74#0" />
-            <element signature="e#415#420#0" />
-            <element signature="n#!!block;n#RetrieveAllSessions#0" />
+            <element signature="e#139#144#0" />
+            <element signature="e#223#228#0" />
+            <element signature="e#290#295#0" />
+            <element signature="e#204#209#0" />
+            <element signature="e#238#243#0" />
+            <element signature="n#!!block;n#IsSessionExpired#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/session/ops.go">
+    <entry file="file://$PROJECT_DIR$/api/dbops/internal.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="58" column="51" selection-start-line="58" selection-start-column="51" selection-end-line="58" selection-end-column="51" />
+        <state relative-caret-position="1215">
+          <caret line="84" column="37" selection-start-line="84" selection-start-column="37" selection-end-line="84" selection-end-column="37" />
           <folding>
-            <element signature="e#17#29#0" expanded="true" />
+            <element signature="n#!!block;n#RetrieveAllSessions#0" />
+            <element signature="n#!!block;n#DeleteSession#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/dbops/api_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!block;n#TestMain#0" />
+            <element signature="n#!!block;n#testAddUser#0" />
+            <element signature="n#!!block;n#testGetUser#0" />
+            <element signature="n#!!block;n#testDeleteUser#0" />
+            <element signature="n#!!block;n#testRegetUser#0" />
+            <element signature="n#!!block;n#testAddVideoInfo#0" />
+            <element signature="n#!!block;n#testGetVideoInfo#0" />
+            <element signature="n#!!block;n#testDeleteVideoInfo#0" />
+            <element signature="n#!!block;n#testRegetVideoInfo#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/handlers.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/dbops/api.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!block;n#AddUserCredential#0" />
+            <element signature="n#!!block;n#GetUserCredential#0" />
+            <element signature="n#!!block;n#DeleteUser#0" />
+            <element signature="n#!!block;n#DeleteVideoInfo#0" />
+            <element signature="n#!!block;n#ListComments#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/utils/uuid.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#15#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/response.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/defs/apidef.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/defs/errs.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="105" selection-start-line="15" selection-start-column="105" selection-end-line="15" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/auth.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding>
+            <element signature="e#14#75#0" expanded="true" />
           </folding>
         </state>
       </provider>
