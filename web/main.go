@@ -1,8 +1,8 @@
 package main
 
 import (
-	"net/http"
 	"github.com/julienschmidt/httprouter"
+	"net/http"
 )
 
 func RegisterHandler() *httprouter.Router {
@@ -11,10 +11,13 @@ func RegisterHandler() *httprouter.Router {
 	router.POST("/",homeHandler)
 	router.GET("/userhome",userHomeHandler)
 	router.POST("/userhome",userHomeHandler)
-	//router.POST("/api",apiHandler)
+	router.POST("/api",apiHandler)
+	router.POST("/upload/:vid-id",proxyHandler)
 	router.ServeFiles("/statics/*filepath",http.Dir("./template"))
 	return router
 }
+
+
 
 func main()  {
 	r := RegisterHandler()
